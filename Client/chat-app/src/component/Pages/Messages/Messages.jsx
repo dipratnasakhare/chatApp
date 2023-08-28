@@ -4,7 +4,7 @@ import React from "react";
 export const Messages = () => {
   const arr = [];
   return (
-    <Box w="100%">
+    <Box w="100%" pos={"relative" } >
       {/* navbar for chat  */}
       <Box w="100%" p="20px" bg="gray.300">
         <Box>
@@ -19,8 +19,8 @@ export const Messages = () => {
         <Image src="https://store-images.s-microsoft.com/image/apps.8985.13655054093851568.1c669dab-3716-40f6-9b59-de7483397c3a.8b1af40f-2a98-4a00-98cd-94e485a04427" />
       </Box>
 
-      <Box p="10px" pl="20px" bg="gray.100">
-        <Box bg="white">
+      <Box  bg="yellow"  border="5px solid green" p="10px" pl="20px" bg="gray.100">
+        <Box bg="white" bottom={0} pos={"absolute"}>
           <Input borderRadius={"0px"} placeholder="🔎" size="md" />
         </Box>
         <Spacer/>
